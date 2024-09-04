@@ -1,0 +1,91 @@
+.Navbar{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 15px 50px;
+    color: #ddd;
+    border: 1px solid white;
+    border-radius: 50px;
+    margin-left: 4rem;
+    
+}
+.head .logo{
+    max-width: 5rem;
+    margin: 1rem;
+    cursor: pointer;
+}
+.head{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px;
+
+}   
+.Navbar ul{
+    display: flex;
+    gap: 40px;
+    list-style: none;
+    font-weight: bold;
+    
+}
+.Navbar li{
+    cursor: pointer;
+}
+.Navbar li:hover{
+    color: #fff;
+    background: linear-gradient(90deg, #f5872d, #3f27ca, #f5872d);
+    background-size: 300%;
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    transition: 0.5s;
+    animation: shine 1s linear infinite;
+}
+@keyframes shine {
+    0% {
+      background-position: 0%;
+    }
+    100% {
+      background-position: 100%;
+    }
+  }
+.nav-right{
+    display: flex;
+    align-items: center;
+    gap: max(1vw, 12px);
+}
+.nav-right select{
+    padding: 5px 9px;
+    border-radius: 20px;
+    border: 1px solid white;
+    background: transparent;
+    color: white;
+    background-color: transparent;
+    cursor: pointer;
+ 
+    
+}
+.nav-right select:hover{
+    transition: all ease-in-out 0.5s;
+    border-color:#3f27ca;
+}
+.nav-right option{
+    background-color: rgb(20, 20, 20);
+    color: #ddd;
+}
+.nav-right button{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 10px 15px;
+    border-radius: 10px;
+    font-size: 15px;
+    color: white;
+    font-weight: 500;
+    cursor: pointer;
+    background-color: transparent;
+    border: none;
+}
+
+
+
